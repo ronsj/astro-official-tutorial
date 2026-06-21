@@ -4,6 +4,6 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  site: process.env.SITE_URL || 'http://localhost:4321',
+  site: process.env.VERCEL_URL || 'http://localhost:4321',
   integrations: [react()],
 });
